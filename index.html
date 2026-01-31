@@ -1,2 +1,213 @@
-Hello Web Design 1
+<!doctype html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Diane Pascual — Comic Book Artist</title>
+
+   <!-- Google Fonts -->
+  <link
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@600;700&family=Poppins:wght@400;500&display=swap"
+  rel="stylesheet"
+/>
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+
+
+ <body>
+   <!-- Skip link for accessibility -->
+   <a class="skip-link" href="#main">Skip to main content</a>
+
+
+   <!-- HEADER + NAV -->
+   <header class="site-header">
+     <div class="container header-inner">
+       <a class="site-logo" href="/" aria-label="Diane Pascual home">
+         <span class="logo-text">DIANE PASCUAL</span>
+       </a>
+
+
+       <nav class="site-nav" aria-label="Primary">
+         <ul class="nav-list">
+           <li><a href="/" aria-current="page">Home</a></li>
+           <li><a href="/portfolio.html">Portfolio</a></li>
+           <li><a href="/blog.html">Blog</a></li>
+           <li><a href="/contact.html">Contact Me</a></li>
+         </ul>
+       </nav>
+     </div>
+   </header>
+
+
+   <!-- MAIN CONTENT -->
+   <main id="main">
+     <!-- HERO (dark section with image left, text right) -->
+     <section class="hero" aria-labelledby="hero-title">
+       <div class="container hero-inner">
+         <figure class="hero-media">
+           <!-- Replace with your actual image export from Figma -->
+           <img
+             src='images/diane-profile.png'
+             alt="Diane Pascual drawing at a comic convention table."
+             width="700"
+             height="450"
+             loading="eager"
+           />
+         </figure>
+
+
+         <div class="hero-content">
+           <p class="hero-kicker">Hi I’m Diane Pascual.</p>
+
+
+           <h1 id="hero-title">Comic Book Artist &amp; Visual Storyteller</h1>
+
+
+           <p class="hero-lede">
+             Welcome to my portfolio. I create narrative-driven illustration, comic pages, and graphic
+             novels inspired by imagination, mythology, and lived experience.
+           </p>
+
+
+           <div class="hero-actions">
+             <a class="btn btn-primary" href="#about">About Diane</a>
+           </div>
+         </div>
+       </div>
+     </section>
+
+
+     <!-- FEATURED WORK (light/tan section with book cover + description + button) -->
+     <section class="featured-work" aria-labelledby="featured-title">
+       <div class="container featured-inner">
+         <figure class="featured-media">
+           <img
+             src="images/dreamwalker-cover.png"
+             alt="Cover of Dreamwalker: Spirit Portals graphic novel."
+             width="520"
+             height="520"
+             loading="lazy"
+           />
+         </figure>
+
+
+         <div class="featured-content">
+           <h2 id="featured-title">Dreamwalker</h2>
+           <p class="featured-subtitle">Graphic Novel</p>
+
+
+           <p class="featured-description">
+             An original graphic novel exploring lucid dreaming, spiritual portals, and feminine
+             intuition through vivid, dream-inspired artwork.
+           </p>
+
+
+           <a class="btn btn-secondary" href="https://a.co/d/a1dtkTW" target="_blank" rel="noopener">
+             Buy on Amazon
+           </a>
+         </div>
+       </div>
+     </section>
+
+
+     <!-- ILLUSTRATION WORK (white section with heading + 3-image gallery + button) -->
+     <section class="illustration-work" aria-labelledby="illustration-title">
+       <div class="container">
+         <header class="section-header">
+           <h2 id="illustration-title">Illustration Work</h2>
+         </header>
+
+
+         <ul class="work-grid" aria-label="Illustration samples">
+           <li class="work-card">
+             <a href="/portfolio.html#illustration-1">
+               <img
+                 src="images/skechers-thumbnail.png"
+                 alt="Illustration sample 1."
+                 width="420"
+                 height="280"
+                 loading="lazy"
+               />
+             </a>
+           </li>
+
+
+           <li class="work-card">
+             <a href="/portfolio.html#illustration-2">
+               <img
+                 src="images/nethealth-thumbnail.png"
+                 alt="Illustration sample 2."
+                 width="420"
+                 height="280"
+                 loading="lazy"
+               />
+             </a>
+           </li>
+
+
+           <li class="work-card">
+             <a href="/portfolio.html#illustration-3">
+               <img
+                 src="images/salesforce-thumbnail.png"
+                 alt="Illustration sample 3."
+                 width="420"
+                 height="280"
+                 loading="lazy"
+               />
+             </a>
+           </li>
+         </ul>
+
+
+         <div class="section-actions">
+           <a class="btn btn-secondary" href="/portfolio.html">View More Work</a>
+         </div>
+       </div>
+     </section>
+
+
+     <!-- CTA BAND (brown section) -->
+     <section class="cta-band" aria-labelledby="cta-title">
+       <div class="container cta-inner">
+         <h2 id="cta-title">Want to work together?</h2>
+         <a class="btn btn-secondary" href="/contact.html">Get in touch</a>
+       </div>
+     </section>
+
+
+     <!-- OPTIONAL: ABOUT ANCHOR (since your hero button suggests an About section) -->
+     <section id="about" class="about" aria-labelledby="about-title" hidden>
+       <div class="container">
+         <h2 id="about-title">About Diane</h2>
+         <p>Short bio goes here.</p>
+       </div>
+     </section>
+   </main>
+
+
+   <!-- FOOTER (dark section with repeated nav + copyright) -->
+   <footer class="site-footer">
+     <div class="container footer-inner">
+       <nav class="footer-nav" aria-label="Footer">
+         <ul class="nav-list">
+           <li><a href="/">Home</a></li>
+           <li><a href="/portfolio.html">Portfolio</a></li>
+           <li><a href="/blog.html">Blog</a></li>
+           <li><a href="/contact.html">Contact Me</a></li>
+         </ul>
+       </nav>
+
+
+       <small class="copyright">© 2026 Diane Pascual</small>
+     </div>
+   </footer>
+ </body>
+</html>
+
+
+
+
+
+
+
 
