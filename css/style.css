@@ -435,3 +435,40 @@ ul {
 }
 
 
+@media (max-width: 768px) {
+
+  /* Page padding */
+  body {
+    padding: 16px;
+  }
+
+  /* Navigation */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* Hero section */
+  .hero {
+    text-align: center;
+  }
+
+  /* Layout sections */
+  .section {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Buttons */
+  .button,
+  button {
+    width: 100%;
+  }
+}
